@@ -1,0 +1,121 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* General */
+body {
+    background: #0a0a0a;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #111;
+    padding: 10px 20px;
+    border-bottom: 2px solid #e63946;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    height: 45px;
+    width: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background: #e63946;
+    color: #fff;
+}
+
+/* Main content */
+main.content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(230, 57, 70, 0.4);
+}
+
+h1, h2 {
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+p, li {
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+/* Buttons (si besoin) */
+a.btn {
+    text-decoration: none; /* supprime le soulignement */
+    display: inline-block; /* pour que le padding fonctionne bien */
+    color: white;          /* couleur du texte */
+    background: #e63946;   /* couleur de fond */
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button, .btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    /* Centre le bouton sur la ligne */
+    display: inline-block;
+    vertical-align: middle; /* si tu veux qu'il s'aligne verticalement avec le texte */
+    
+    /* Marge avec le texte */
+    margin-left: 10px; /* espace avant le bouton si le texte est à gauche */
+    margin-right: 10px; /* optionnel, espace après le bouton */
+}
+
+button:hover, .btn:hover {
+    background: #ff4757;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background: #111;
+    border-top: 2px solid #e63946;
+    font-size: 0.9em;
+}
